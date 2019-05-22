@@ -1,0 +1,30 @@
+.button {
+  display: block;
+  padding: 14px 10px;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $grey-dark;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  background-color: transparent;
+  border: 2px solid $grey-dark;
+
+  transition-duration: 150ms;
+
+  &:focus,
+  &:hover {
+    color: #ffffff;
+
+    background-color: $grey-dark;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

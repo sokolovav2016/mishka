@@ -1,0 +1,170 @@
+.field {
+  &--contact {
+    position: relative;
+  }
+}
+
+.field__label {
+  &--name {
+    line-height: 18px;
+    font-weight: 700;
+  }
+
+  &--contact {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 9px;
+
+    line-height: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $green-light;
+
+    &::after {
+      content: "";
+
+      flex-grow: 1;
+      margin-left: 20px;
+      height: 1px;
+
+      background-color: #62d1ba;
+    }
+  }
+}
+
+.field__input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 60px 16px 0;
+
+  font-size: 17px;
+  line-height: 18px;
+  font-family: $main-font;
+  color: $grey-dark;
+
+  border: 0;
+  border-bottom: 2px solid #000000;
+
+  transition-duration: 150ms;
+
+  &::placeholder {
+    font-size: 17px;
+    line-height: 18px;
+    color: rgba(68, 68, 68, 0.3);
+  }
+
+  &:focus,
+  &:hover {
+    border-color: $green-light-1;
+  }
+
+  &--contact {
+    &:focus ~ .field__icon,
+    &:hover ~ .field__icon {
+      fill: $green-light-1;
+      fill-opacity: 1;
+    }
+  }
+
+  &--tel {
+    &::placeholder {
+      font-size: 19px;
+    }
+  }
+}
+
+.field__icon {
+  position: absolute;
+  top: 34px;
+  right: 4px;
+
+  fill-opacity: 0.2;
+
+  &--tel {
+    right: 8px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .field {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+  }
+
+  .field__label {
+    &--name {
+      margin-right: 25px;
+
+      font-size: 19px;
+      line-height: 19px;
+    }
+
+    &--contact {
+      width: 25%; // 167px
+      margin-bottom: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .field__input {
+    padding-left: 16px;
+    padding-bottom: 13px;
+
+    font-size: 19px;
+    line-height: 19px;
+
+    &::placeholder {
+      font-size: 19px;
+      line-height: 19px;
+    }
+
+    &--name {
+      width: auto;
+      flex-grow: 1;
+    }
+
+    &--contact {
+      width: 75%; // 501px
+      background-color: $grey-light;
+    }
+  }
+
+  .field__icon {
+    top: 13px;
+    right: 22px;
+
+    &--tel {
+      right: 26px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field__label {
+    &--contact {
+      width: 20%; // 175px
+      padding-left: 60px;
+      box-sizing: border-box;
+    }
+  }
+
+  .field__input {
+    &--contact {
+      width: 80%; // 700px
+    }
+  }
+
+  .field__icon {
+    top: 13px;
+    right: 4px;
+
+    &--tel {
+      right: 8px;
+    }
+  }
+}

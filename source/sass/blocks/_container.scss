@@ -1,0 +1,45 @@
+.container {
+  padding-right: 30px;
+  padding-left: 30px;
+  margin: 0 auto;
+
+  &--catalog {
+    padding-top: 30px;
+    padding-bottom: 58px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    padding-right: 50px;
+    padding-left: 50px;
+
+    &--catalog {
+      padding-top: 69px;
+      padding-bottom: 63px;
+    }
+
+    &--fieldset {
+      width: 65.234375%;
+      padding-left: 28.25520833%;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1050px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    &--catalog {
+      padding-top: 123px;
+      padding-bottom: 105px;
+    }
+
+    &--fieldset {
+      width: 875px;
+      padding-left: 225px;
+    }
+  }
+}

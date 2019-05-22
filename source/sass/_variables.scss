@@ -1,0 +1,30 @@
+$-bottom: -42px; // Выпадание элементов из шапки
+
+$mobile-width: 320px;
+$mobile-width-only: 767px;
+$tablet-width: 768px;
+$desktop-width: 1150px;
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+// Fonts
+$main-font: "Opensans", "Arial", sans-serif;
+
+// Colors
+$green-light: #63d1bb;
+$green-light-1: #62d1ba;
+$green-light-2: #46c1ae;
+$green-dark: #56c3b2;
+
+$grey-extra-light-1: #ededed;
+$grey-extra-light-2: #ececec;
+$grey-extra-light-3: #e5e5e5;
+$grey-light: #f1f1f1;
+
+$grey-dark: #444444; // Текст
+
+// Корректировки
+$mr-2: -2px; // Для заголовков h2 на мобильном
+$mr-4: -4px; // Для заголовков h2 на планшете
+$mr-5: -5px; // Для блока социконок на мобильном
