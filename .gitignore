@@ -10,11 +10,3 @@ source/
 node_modules/
 npm-debug.*
 Thumbs.db
-
-*.editorconfig
-*.gitattributes
-*.stylelintrc
-*.travis.yml
-Contributing.md
-gulpfile.js
-*.json
