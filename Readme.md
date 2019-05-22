@@ -15,4 +15,4 @@
 * Кодгайд / Линтер
 * SVG-спрайт
 
-[Перейти на сайт](https://sokolovav2016.github.io/mishka/)
+[Перейти на сайт](https://sokolovav2016.github.io/mishka/build/)
